@@ -4,12 +4,16 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('web.homepage');
 })->name('home');
 
 Route::get('/product', function () {
-    return "Product Page";
-});
+    return view('web.product');
+})->name('product');
+
+Route::get('product/{slug}', function($slug){ 
+    return view('web.single_product'); 
+ });
 
 Route::get('/about', function () {
     return "About Page";
