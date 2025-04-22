@@ -1,12 +1,12 @@
 <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">TOLDEM</a>
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #020f5e;">
+        <div class="container">
+            <a class="navbar-brand" href="#">SARUNG TENUN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end gap-4" id="navbarSupportedContent">
+            <ul class="navbar-nav gap-3">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                 </li>
@@ -28,9 +28,11 @@
                     <a class="nav-link disabled" aria-disabled="true">Search</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+            <form class="d-flex gap-4 align-items-center">
+                <button class="btn btn-success" type="button">Login</button>
+                <a href="#">
+                    <i class="fa-solid fa-bag-shopping" style="color: white;"></i>
+                </a>
             </form>
             </div>
         </div>

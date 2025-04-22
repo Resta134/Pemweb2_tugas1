@@ -1,4 +1,5 @@
-<x-layout title="Daftar Produk">
+<x-layout>
+    <x-slot:title>{{ $title }}</x-slot:title>
     <h1 class="mb-4">SARUNG</h1>
     <div class="container">
         <div class="row">
